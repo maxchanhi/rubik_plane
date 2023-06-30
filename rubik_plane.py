@@ -63,6 +63,10 @@ def shuffle():
             command = user_input[i][0]
             position = int(user_input[i][1])
             plane = moving(command, position)
+        if plane == [[1,2,3],[4,5,6],[7,8,9]]:
+            shuffle()
+        else:
+            pass
         return plane
     except:
         print("Invalid input")
